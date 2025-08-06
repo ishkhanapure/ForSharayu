@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #f5f5dc, #e0d9c6); /* beige gradient */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  text-transform: uppercase;
+}
+
+.container {
+  background: #ffffff;
+  padding: 2rem;
+  margin-top: 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 440px;
+}
+
+.title {
+  font-size: 2.2rem;
+  color: #002366; /* royal blue */
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  gap: 12px;
+  justify-content: center;
+  margin: 1.8rem 0;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  border: 2px solid #002366; /* royal blue */
+  border-radius: 10px;
+  background: #f5f5dc; /* beige */
+  color: #002366;
+  font-weight: 600;
+  transition: background 0.25s ease, transform 0.15s ease;
+}
+
+.cell:hover {
+  background-color: #e6dfc5; /* lighter beige */
+  transform: scale(1.05);
+}
+
+.game-ui h2 {
+  margin: 0.5rem 0 1rem;
+  color: #002366;
+  font-weight: 600;
+}
+
+button {
+  background-color: #002366;
+  color: #f5f5dc;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.25s ease;
+}
+
+button:hover {
+  background-color: #001a4d;
+}
+
+.setup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.setup-form input {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #002366;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #002366;
+  background-color: #fffaf0;
+  font-weight: 500;
+}
+
+.setup-form button {
+  margin-top: 0.5rem;
+}
